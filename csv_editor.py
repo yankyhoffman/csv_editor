@@ -26,6 +26,8 @@ class CsvEditor(tk.Tk):
                 new_record = Record(self, row)
                 self.records.append(new_record)
                 new_record.pack()
+                # Update the frame to visualize loading.
+                self.update()
 
     def save_as(self):
         self.save_file(as_new=True)
